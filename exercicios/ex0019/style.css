@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*
+ - o id do HTML é representado como # no CSS
+ - o class do HTML é representado como . no CSS
+
+ - Utilizamos id para 1 elemnto por página.
+ - Utilizamos o class para mais de um elemnto por página.
+
+*/
+
+body{
+    background-color: rgb(215, 148, 99);
+    font: normal normal 1em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color: rgb(88, 22, 22);
+    
+}
+h1#Principal{
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    color: rgb(183, 91, 26);
+    
+    
+
+}
+p{
+    text-align: justify;
+    
+}
+
+.titulo{
+    background-color: #d23535;
+}
+
+.basico{
+    color: #97a52a;
+}
+.intermediario{
+    color: #43a52a;
+
+}
+.avancado{
+    color: rgb(128, 69, 33);
+}

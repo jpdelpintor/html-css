@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <picture>
+        <source media="(max-width:310 )" srcset="imagens/dedo-do-meio-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px )" srcset="imagens/dedo-do-meio-m.jpg" type="image/jpg">
+        <img src="imagens/dedo-do-meio-g.jpg" alt="Dedo do meio dinâmico">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5. Abaixo a forma mais simples:</p>
+   
+    
+
+    <audio src="midia/Silver Waves - TrackTribe.mp3" controls></audio>
+
+    <p>A forma mais recomendada pelo professor:</p>
+
+    <audio preload="auto" controls autoplay>
+        <source src="midia/Silver Waves - TrackTribe.mp3" type="audio/mpeg">
+        <source src="midia/Silver Waves - TrackTribe.ogg" type="audio/ogg">
+        <source src="midia/Silver Waves - TrackTribe.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue carregar o áudio. Clique <a href="midia/Silver Waves - TrackTribe.mp3" download="Silver Waves - TrackTribe.mp3" type="audio/mpeg">aqui</a> para fazer download.</p>
+
+    </audio>
+    <p>Perceber que o parâmetro <em>autoplay</em> não funciona nesse navegador.</p>
+</body>
+</html>

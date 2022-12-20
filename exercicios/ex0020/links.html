@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = childrem
+        
+        
+        */
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a{
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*Pseudo-classes*/
+        a:visited{
+            color:rgb(184, 151, 215)
+        }
+
+        a:hover{
+            color:red;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color:rgb(32, 10, 53)
+        }
+
+        /*Pseudo-elementos*/
+        a::before{
+            content: '→ ';
+        }
+
+        a::after{
+            content: ' ←';
+
+        }
+
+        .preferido::after{
+            content: ' 😊';
+        }
+
+        /*Childrem*/
+        div > p{
+            display: none;
+        }
+         div:hover > p#aparente {
+            display:block;
+
+         }
+         
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UCt_4wzTQqmcUvemNkeO0plA" target="_blank" rel="external" class="preferido">Canal do Ei Nerd!</a></li>
+        <li><a href="https://www.youtube.com/@BRKsEDU/videos" target="_blank" rel="external">Canal do BRKsEDU</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">Canal do Curso em Vídeo</a></li>
+    </ul>
+
+    <div>
+        Passe o mouse aqui
+        <p id="aparente">Mensagem oculta</p>
+        <p>Esse não deve aparecer</p>
+        
+    </div>
+</body>
+</html>

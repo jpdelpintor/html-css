@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de Textos</title>
+
+    <style>
+        mark{
+            background-color: deeppink;
+        }
+    </style>
+
+</head>
+<body>
+<h1>Principais formatações</h1>
+<h2>Negrito / Destaque</h2>
+<p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica).</p>
+<p>Nesta outra, <b>outro termo em destaque</b>, porém usando a tag &lt;b&gt; (não semântica).</p>
+<p>
+    Agora, utilizamos a tag &lt;i&gt; (não semântica) para <i>este termo</i>.
+    E a tag &lt;em&gt; (semântica) para <em>outro termo</em>.
+</p>
+<h2>Texto Marcado</h2>
+<p>Para marcar textos utilizamos a tag &lt;mark&gt;. A cor pode ser formatada por individualmente como em <mark style="background-color:blue ;">azul</mark>, ou para todas as marcações como em <mark>rosa, rosa</mark>.</p>
+<h2>Texto grande e texto pequeno</h2>
+<p>A tag &lt;big&gt; que deixa o texto <big>maior</big> não está mais em uso. A tag &lt;small&gt;, ao contrário, ainda está viva na linguagem. Esta deixa o texto <small>menor</small>. O Prof. levanta a possibilidade de ser isso devido ao fato de que letras pequenas tem um valor semântico maior, associado às letras usadas em contratos. As letras grandes são meras opções de forma.</p> 
+
+<h2>Texto deletado</h2>
+<p>Utilizamos a tag &lt;del&gt; para indicar que um texto foi <del>desconsiderado</del> pelo autor.</p>
+
+<h2>Texto inserido</h2>
+<p>Utilizamos a tag &lt;ins&gt; para indicar tratar-se de um texto <ins>que deve ser lido, a que se deve prestar atenção.</ins> <u>Antigamente</u> utilizava-se a tag &lt;u&gt;.</p>
+<h2>Texto sobrescrito e subscrito</h2>
+<p>Para sobrescrever um texto, usamos a tag &lt;sup&gt;, e para subscrever usamos a tag &lt;sub&gt;. Exemplo x<sup>2</sup> e CO<sub>2</sub>.</p>
+
+<h2>Trechos de código</h2>
+<p>Sem a organização dos espaçamentos, apenas utilizando a tag &lt;code&gt;, temos a distribuição mono-espaçada das letras, que facilita e leitura de códigos: <code>num=int(input('Digite um número'))</code></p>
+<p>Se quisermos manter os espaçamentos que facilitam ainda mais a leitura do código, podemos utilizar a tag &lt;pre&gt;, de pré-formatado:</p>
+<pre><code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é par')
+    else:
+        print(f'O número {num} é ímpar')
+    print('FIM DO PROGRAMA')
+</code></pre>
+
+<h2>Citações</h2>
+<p>Para citações, podemos utilizar duas tags. A tag &lt;q&gt; (de <em>quote</em>) para citações mais curtas, de meio de parágrafo. Por exemplo, a frase <q >se beber não dirija</q>. </p>
+<p>Podemos também querer fazer citações mais longas, neste caso utilizamos a tag &lt;blockquote&gt;. No exemplo: </p>
+<blockquote cite="https://www.martinsfontespaulista.com.br">O PHP é uma linguagem para a criação de scripts para a Web do lado servidor embutidos em HTML, cujo código-font é aberto, e que é compatível com os mais importantes servidores Web (especialmente Apache).</blockquote>
+<p>O parâmetro cite não afeta nata na experiência visual da página. Porém ajuda ferramentas de busca como o google a relacionarem a citação com um endereço.</p>
+
+<h2>Abreviações</h2>
+<p>Serve para mostrar o significado de siglas e abreviações quando o usuário passa o mouse sobre elas. Trata-se da tag &lt;abbr&gt; e pode ser vista no termo <abbr title="Instituto Borborema">IB</abbr></p>
+<h2>Texto invertido</h2>
+<p>tag &lt;bdo&gt;. <bdo dir="rtl">Esse texto está invertido.</bdo></p>
+<h2>testando tag &lt;aside&gt;</h2>
+<aside>hoje comi hambúrguer</aside>
+</body>
+</html>
