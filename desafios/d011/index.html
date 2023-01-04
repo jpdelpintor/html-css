@@ -11,16 +11,39 @@
             /* Shorthand - background 
             color > image > position > repeat > [size] > attachment*/
             /*Essa shorthando não funciona quando utilizamos o parâmetro size*/
-           
-            background-image: black
+            margin: 0px;
+           background: black url('imagens/espaco.jpg') center center no-repeat fixed;
+           /*background-color: black;
+           background-image: url('imagens/espaco.jpg');
+           background-position: center center;
+           background-repeat: no-repeat;*/
+           background-size: cover;
+                       
+        }
+        div#astronauta{
             
+            background: transparent url('imagens/astronauta.png') center center no-repeat fixed;
+            background-size: contain;
             
-            
+            width: 100vw;
+            height: 100vh;
+
+            /*Pela forma como configurei os parâmetros width e height acima, não se torna necessário esta parte de baixo.*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%,-50%);
+
             
         }
+
     </style>
 </head>
 <body>
+    <div id="astronauta">
+
+    </div>
 
     
 </body>
